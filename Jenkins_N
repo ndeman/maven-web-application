@@ -27,7 +27,7 @@ node{
   stage('8emailNotify'){
     emailext body: '''Hello Team,
 
-Build is done.
+Build has been done.
 
 LANDMARKTECH''', recipientProviders: [developers(), contributor(), upstreamDevelopers()], subject: 'Build Status', to: 'mylandmarktech@gmail.com'
   }
